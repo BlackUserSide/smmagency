@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.sass";
 
-function App() {
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { HomePage } from "./components/HomePage";
+import { CabinetScreen } from "./components/CabinetScreen";
+import { AdminScreen } from "./components/adminComposiotion/AdminScreen";
+import { AdminOrders } from "./components/adminComposiotion/AdminOrders";
+import { AdminProduct } from "./components/adminComposiotion/AdminProduct";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/cabinet" component={CabinetScreen} />
+      <Route path="/panel" component={AdminScreen} />
+      <Route path="/panel/orders" component={AdminOrders} />
+      <Route path="/panel/product" component={AdminProduct} />
+    </Switch>
   );
-}
-
-export default App;
+};

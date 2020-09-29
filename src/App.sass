@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  
+.site-header
+  display: flex
+  justify-content: space-between
+  font-family: 'Montserrat', sans-serif
+  padding: 15px 25px
+  .profile-link
+    width: 44px
+    height: 44px
+    cursor: pointer
+  .main-nav
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        margin-right: 25px
+        a
+          text-decoration: none
+          font-size: 14px
+          color: #ffffff
+          line-height: 17px
+.main-screen-app
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  min-height: 750px
+  height: 100%
+  position: relative
+  padding: 0 0
+  overflow-x: hidden
+  .main-composition
+    display: flex
+    margin: 0 80px    
+    .text-composition
+      width: 50%
+      padding: 80px 0
+      .h1
+        font-family: 'Montserrat', sans-serif
+        font-size: 64px
+        color: #ffffff
+        line-height: 78px
+        position: relative
+        padding-bottom: 15px
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          width: 30%
+          background: #FFC107;
+          height: 2px
+      p
+        padding: 35px 0
+        font-family: 'Montserrat', sans-serif
+        color: #ffffff
+        font-size: 18px
+        letter-spacing: 0.02em;
+      a
+        background: #FFC107
+        color: #ffffff
+        text-decoration: none
+        padding: 10px 25px
+        border-radius: 25px
+        font-weight: bold
+  .image-bg-wrapper
+    width: 162px
+    height: 162px
+    position: absolute
+    left: 40%
+    img
+      width: 100%
+.s-advantages
+  padding: 35px 0
+  .top-line
+    .h1
+      text-align: center
+      font-size: 36px
+      letter-spacing: 0.02em
+  .advantages-composition
+    display: flex
+    justify-content: space-around
+    .item-advantages
+      background: linear-gradient(138.73deg, #4F5BD5 0%, #962FBF 26.04%, #D62976 51.04%, #FA7E1E 72.92%, #FEDA75 100%)
+      text-align: center
+      width: 360px
+      padding: 25px 
+      border-radius: 16px
+      transition: .3s ease
+      &:hover
+        transform: scale(1.1)
+      img
+        width: 130px
+        display: inline-block
+        margin-bottom: 15px
+      p
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        font-size: 20px
+        color: #ffffff
+.s-about
+  padding: 35px 0
+  background: url(./image/bg.png)
+  .top-line
+    .h1
+      font-family: 'Montserrat', sans-serif
+      font-weight: 600
+      text-align: center
+      font-size: 36px
+      letter-spacing: 0.02em
+      color: #ffffff
+  .about-composition
+    padding: 35px 0
+    display: flex
+    justify-content: space-around
+    .item-composition
+      width: 200px
+      text-align: center
+      p
+        color: #ffffff
+        font-family: 'Montserrat', sans-serif
+        font-size: 18px
+.s-service
+  padding: 35px 0
+  min-height: 650px
+  height: 100%
+  .top-line
+    .h1
+      font-family: 'Montserrat', sans-serif
+      font-weight: 600
+      text-align: center
+      font-size: 36px
+      letter-spacing: 0.02em
+  .service-nav
+    font-family: 'Montserrat', sans-serif
+    ul
+      padding: 35px 0
+      margin: 0 80px
+      
+      li
+        display: inline-block
+        margin-right: 50px
+        .service-link
+          text-decoration: none
+          color: #000000
+          font-size: 32px
+          position: relative
+          padding-bottom: 5px
+          &::after
+            content: ''
+            position: absolute
+            width: 0%
+            height: 2px
+            background: #FFC107
+            left: 0
+            bottom: 0
+            transition: width .5s ease, opacity .3s linear
+            opacity: 0
+        .is-active
+          &::after
+            width: 100%
+            opacity: 1
+  .service-wrapper
+    display: flex
+    margin: 0 50px
+    padding: 25px 0
+    flex-wrap: wrap
+    height: 750px
+    .item-wrapper
+      margin: 0 25px
+      width: 400px
+      position: relative
+      margin-bottom: 145px
+      .top-line
+        width: 100%
+        //background: linear-gradient(138.73deg, #4F5BD5 0%, #962FBF 26.04%, #D62976 51.04%, #FA7E1E 72.92%, #FEDA75 100%)
+        text-align: center
+        padding: 25px 0
+        border-radius: 10px 10px 0px 0px
+        .h3
+          color: #ffffff
+          font-family: 'Montserrat', sans-serif
+          font-size: 24px
+          font-weight: 500
+      .composition-item-wrapper
+        
+        min-height: 120px
+        height: 100%
+        background-position: center
+        background-repeat: no-repeat
+        text-align: center
+        position: relative
+        p
+          font-size: 36px
+          font-family: 'Montserrat', sans-serif
+          font-weight: 600
+          margin: 0
+          position: relative
+          top: 70px
+        a
+          text-decoration: none
+          background-color: #FFC107
+          border-radius: 24px
+          padding: 10px 25px
+          top: 120px
+          position: relative
+          color: #ffffff
+.login-form
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, .4)
+  position: fixed
+  top: 0%
+  left: 0%
+  display: none
+  z-index: 1
+.pop-active
+  display: block
+
+.login-wrapper
+  position: fixed
+  top: 50%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -50%)
+  width: 320px
+  background-color: #ffffff
+  padding: 25px 15px
+  z-index: 3
+  display: none
+  font-family: 'Montserrat', sans-serif
+  border-radius: 10px
+  input
+    border: none
+    border-bottom: 2px solid #666
+    outline: none
+    display: inline-block
+    margin-bottom: 15px
+    font-family: 'Montserrat', sans-serif
+    font-size: 18px
+  label
+    display: inline-block
+    margin-bottom: 15px
+    font-size: 24px
+  button
+    color: #ffffff
+    background: #FFC107
+    border-radius: 5px
+    padding: 10px 25px
+    border: none
+    cursor: pointer
+    transition: .5s ease
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    &:hover
+      transform: scale(1.1)
+.popForm-active
+  display: block
+.cabinet-main
+  display: flex
+  margin: 0 80px
+  padding: 35px 0
+  .settings-screen
+    width: 50%
+    .settings-change
+
+      .h1
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 36px
+        margin: 0
+        margin-bottom: 55px
+      .logo-login
+        font-family: 'Montserrat'
+        font-size: 18px
+        
+  .history-shop
+    width: 50%
+    overflow-y: scroll
+    padding: 25px 15px
+    max-height: 500px
+    height: 100%
+    
+    &::-webkit-scrollbar  
+      width: 0 
+    .history-item
+      display: flex
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1)
+      border-radius: 11px
+      padding: 15px
+      align-items: center
+      position: relative
+      overflow: hidden
+      margin-bottom: 25px
+      img
+        margin-right: 15px
+      .service-history
+        font-weight: 500
+        font-family: 'Montserrat'
+        font-size: 18px
+        margin-right: 32px
+      .date-order
+        font-family: 'Montserrat'
+        font-size: 14px
+        color: #A4A4A4
+      .price-hist
+        position: absolute
+        right: 32px
+        font-size: 18px
+        font-family: 'Montserrat'
+        top: 12px
+.cabinet-nav
+  font-family: 'Montserrat'
+  ul
+    list-style-type: none
+    li
+      display: inline-block
+      margin-right: 25px
+      a
+        font-weight: bold
+        font-size: 14px
+        color: #000000
+        text-decoration: none
+
+.bg-pop-up
+  position: fixed
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  background-color: rgba(#000, .7)
+  z-index: 3  
+  display: none
+.form-set-order
+  background-color: #fff
+  position: fixed
+  z-index: 4
+  top: 50%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -50%)
+  width: 450px
+  padding: 10px 5px
+  border-radius: 15px
+  display: none
+  font-family: 'Montserrat'
+  text-align: center
+  .top-line-form
+    margin-bottom: 15px
+    text-align: left
+    .h3
+      margin: 0
+      padding: 0 10px
+      font-family: 'Montserrat'
+  .order-description
+    display: flex
+    justify-content: space-between
+    border-top: 2px solid #000
+    border-bottom: 2px solid #000
+    padding: 10px 25px
+    text-align: left
+    p
+      margin: 0
+      padding: 0
+      font-size: 18px
+  p
+    text-align: left
+  input
+    width: 80%
+    padding: 10px 15px
+    border-radius: 15px
+    outline: none
+    display: inline-block
+    margin-bottom: 15px
+  button
+    color: #ffffff
+    background: #FFC107
+    border-radius: 5px
+    padding: 10px 25px
+    border: none
+    cursor: pointer
+    transition: .5s ease
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+.register-form
+  background-color: #fff
+  position: fixed
+  z-index: 4
+  top: 50%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -50%)
+  width: 450px
+  padding: 10px 5px
+  border-radius: 15px
+  display: none
+  font-family: 'Montserrat'
+  text-align: center
+  .top-line-form
+    margin-bottom: 15px
+    text-align: left
+    .h3
+      margin: 0
+      padding: 0 10px
+      font-family: 'Montserrat'
+  input
+    width: 80%
+    padding: 10px 15px
+    border-radius: 15px
+    outline: none
+    display: inline-block
+    margin-bottom: 15px
+  button
+    color: #ffffff
+    background: #FFC107
+    border-radius: 5px
+    padding: 10px 25px
+    border: none
+    cursor: pointer
+    transition: .5s ease
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    
+
+.is-bay-active
+  display: block         
+          
+.msg-wrapper
+  text-align: center
+  width: 100%
+  p
+    font-size: 22px
+    font-weight: 500
+    display: inline-block
+    color: #32CD32
+.form-err
+  text-align: center
+  p
+    color: #ff1e00
+.top-line-form
+  text-align: center
+  .h1
+    text-align: center
+.orders-wrapper-admin
+  display: flex
+  flex-direction: column
+  align-items: center
+  .item-order
+    width: 650px
+    display: flex
+    border: 2px solid #000
+    margin-bottom: 15px
+    border-radius: 15px
+    padding: 0 25px
+    justify-content: space-between
+    align-items: center 
+    img
+      width: 35px
+      height: 35px      
+.navbar-cabinet
+  width: 100%
+  display: flex
+  padding: 35px 0
+  justify-content: center
+  ul
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      margin-right: 25px
+      a
+        text-decoration: none
+        color: #000000
+        font-family: 'Montserrat', sans-serif
+        font-size: 24px
+
+.admin-product-wrapper
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  padding: 25px 75px
+  .item-product
+    width: 350px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 15px
+    border: 1px solid #666
+    margin-bottom: 15px
+    overflow: hidden
+    .top-line
+      text-align: center
+      background: rgb(66, 103, 178);
+      width: 100%
+      padding: 10px 0
+      .h3
+        margin: 0
+        font-family: 'Montserrat', sans-serif
+        display: inline-block
+        color: #ffffff
+    .composition-product
+      width: 100%
+      text-align: center
+      padding: 20px 0
+      p
+        font-family: 'Montserrat', sans-serif
+      a
+        text-decoration: none
+        background-color: #fff 
+        background: rgb(66, 103, 178);
+        color: #ffffff
+        padding: 5px 15px
+        border-radius: 15px
+.add-product
+  text-align: center
+  a
+    display: inline-block
+    text-decoration: none
+    color: #ffffff
+    background: rgb(66, 103, 178);
+    padding: 10px 25px
+    border-radius: 10px
+    transition: .5s ease
+    &:hover
+      transform: scale(1.1)
+
+.change-product
+  background-color: #fff
+  position: fixed
+  z-index: 4
+  top: 50%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -50%)
+  width: 450px
+  padding: 10px 5px
+  border-radius: 15px
+  
+  font-family: 'Montserrat'
+  text-align: center
+  input
+    width: 80%
+    padding: 10px 15px
+    border-radius: 15px
+    outline: none
+    display: inline-block
+    margin-bottom: 15px
+    text-align: center
+  select 
+    width: 50%
+    height: 34px
+    font-size: 18px
+    display: inline-block
+    margin-bottom: 15px
+    option
+      font-size: 18px
+  button
+    color: #ffffff
+    background: #FFC107
+    border-radius: 5px
+    padding: 10px 25px
+    border: none
+    cursor: pointer
+    transition: .5s ease
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+
+.add-service
+  background-color: #fff
+  position: fixed
+  z-index: 4
+  top: 50%
+  left: 50%
+  margin-right: -50%
+  transform: translate(-50%, -50%)
+  width: 450px
+  padding: 10px 5px
+  border-radius: 15px
+  
+  font-family: 'Montserrat'
+  text-align: center
+  input
+    width: 80%
+    padding: 10px 15px
+    border-radius: 15px
+    outline: none
+    display: inline-block
+    margin-bottom: 15px
+    text-align: center
+  select 
+    width: 50%
+    height: 34px
+    font-size: 18px
+    display: inline-block
+    margin-bottom: 15px
+    option
+      font-size: 18px
+  button
+    color: #ffffff
+    background: #FFC107
+    border-radius: 5px
+    padding: 10px 25px
+    border: none
+    cursor: pointer
+    transition: .5s ease
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+
+@media (max-width: 1200px)
+  .s-advantages 
+    .advantages-composition 
+      .item-advantages 
+        width: 300px
+@media (max-width: 1050px)
+  .s-advantages 
+    .advantages-composition 
+      .item-advantages 
+        width: 250px
+  .main-screen-app 
+    .main-composition 
+      .text-composition
+        .h1
+          font-size: 38px
+@media (max-width: 910px)
+  .main-screen-app 
+    .image-bg-wrapper
+      display: none 
+    .main-composition 
+      flex-direction: column
+      align-items: center
+      .text-composition
+        width: 100%
+        text-align: center
+        margin-bottom: 35px
+      .image-wrapper-header
+        width: 80%
+  .s-advantages 
+    .advantages-composition 
+      flex-direction: column
+      align-items: center
+      .item-advantages 
+        width: 300px
+        margin-bottom: 25px
+  .s-about 
+    .about-composition
+      flex-direction: column
+      align-items: center
+      .item-composition
+        margin-bottom: 45px
+  .s-service 
+    .service-wrapper
+      align-items: center
+      flex-direction: column
+      flex-wrap: nowrap
+      .item-service
+        margin-bottom: 25px
+  .s-service 
+    .service-nav
+      ul
+        li
+          margin-bottom: 20px
+  .cabinet-main
+    margin: 0 20px
+    flex-direction: column-reverse 
+    .settings-screen
+      width: 100%
+    .history-shop
+      width: 100%
+@media (max-width: 480px)
+  .main-screen-app 
+    .main-composition
+      margin: 0 10px
+      .text-composition
+        text-align: left 
+      .image-wrapper-header
+        width: 100%
+        img
+          width: 100%
